@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aswin's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">Aswin's Portfolio</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"><b>Home</b></a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"><b>About</b></a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"><b>Projects</b></a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"><b>Contact</b></a>
+                    <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+                        <svg class="sun-icon w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 2zm0 12a4 4 0 100-8 4 4 0 000 8zm0-1.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm7.25-3.25a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 01.75.75zm-14.5 0a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 01.75.75zm12.728-5.978a.75.75 0 011.061 1.06l-1.06 1.061a.75.75 0 01-1.061-1.06l1.06-1.061zM5.282 4.282a.75.75 0 011.06 1.06l-1.06 1.061a.75.75 0 01-1.061-1.06l1.06-1.061zM15.718 14.718a.75.75 0 011.06 1.06l-1.06 1.061a.75.75 0 01-1.061-1.06l1.06-1.061zM4.282 14.718a.75.75 0 011.06 1.06l-1.06 1.061a.75.75 0 01-1.061-1.06l1.06-1.061z"/>
+                        </svg>
+                        <svg class="moon-icon w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <div class="text-center px-4 hero-text">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Hi, I'm Aswin Mishra</h1>
+            <p class="text-lg sm:text-xl md:text-2xl mb-6">"I'm Aswin, a tech-enthusiastic B.Tech student passionate about cybersecurity, innovation, and exploring new technologies."</p>
+            <a href="#contact" class="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://i.ibb.co/pSLXfJM/bbbbbbbbbbbbbbbbbbbbbbbbbb.jpg" alt="Profile" class="profile-pic" onerror="this.src='https://via.placeholder.com/200?text=Profile+Image'">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-lg leading-relaxed" id="myDescription">
+Aswin is a dedicated B.Tech student at Sister Nivedita University with a strong passion for cybersecurity, software development, and emerging technologies. He actively pursues hands-on projects and internships, constantly exploring real-world tech solutions while enhancing his skills through certifications like the Google Cybersecurity Certificate.
+
+Beyond academics, he enjoys gaming, traveling, and discovering new gadgets. With a curious mind and a drive to innovate, Aswin is focused on building a strong foundation to make a meaningful impact in the tech industry.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                    <img src="https://th.bing.com/th/id/OIP.m5GdV5c-w4jhv5JcoYMFpQHaD9?w=286&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Task Manager" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/300?text=Task+Manager'">
+                    <div class="project-overlay">View Amazon Clone</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Amazon Clone</h3>
+                        <p class="text-gray-600">This project is a simple Amazon-like webpage built using HTML and CSS.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.dmz7gMwm0ZLxKIfoQ_-QPAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="E-Commerce Store" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/300?text=E-Commerce+Store'">
+                    <div class="project-overlay">View Rock Paper Scissor game</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Rock Paper Scissor game</h3>
+                        <p class="text-gray-600">This is a simple Rock-Paper-Scissors game implemented in JavaScript.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden project-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.rJNVnJrD2ta43XuVUZpYbgHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tic Tac Toe Game" class="w-full h-48 object-cover" onerror="this.src='https://via.placeholder.com/300?text=Tic+Tac+Toe+Game'">
+                    <div class="project-overlay">View Tic Tac Toe Game</div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Tic Tac Toe Game</h3>
+                        <p class="text-gray-600">A simple, interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Get in Touch</h2>
+            <div class="max-w-lg mx-auto">
+                <p class="text-lg text-center mb-6">Feel free to reach out for collaborations or inquiries!</p>
+                <div class="space-y-4">
+                    <p class="text-center"><strong>Email:</strong> <a href="mailto:aswinmishra551@gmail.com" class="text-blue-600 hover:underline">aswinmishra551@gmail.com</a></p>
+                    <p class="text-center"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aswin-mishra-3a9901259/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">linkedin.com/in/aswin-mishra</a></p>
+                    <p class="text-center"><strong>GitHub:</strong> <a href="https://github.com/swin01" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">github.com/swin01</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Bubble -->
+    <div class="chat-bubble" onclick="toggleChat()">Ask Anything About Me</div>
+
+    <!-- Chatbot Overlay -->
+    <div class="chat-overlay" id="chatOverlay">
+        <div class="chat-header">
+            <img src="https://i.ibb.co/pSLXfJM/bbbbbbbbbbbbbbbbbbbbbbbbbb.jpg" alt="Profile" onerror="this.src='https://via.placeholder.com/40?text=Profile'">
+            <span>Chat with Aswin Mishra</span>
+            <button onclick="toggleChat()" class="text-white hover:text-gray-200">✕</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <div class="chat-message ai">
+                <div class="message-content">Hey there! I'm Aswin Mishra. What's on your mind?</div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
